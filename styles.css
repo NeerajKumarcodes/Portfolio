@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body{
+    max-width: 100% !important;
+    position: relative;
+    overflow-x: hidden !important;
+}
+
+html, body{
+    overflow-x: hidden !important;
+}
+
+/* Navbar */
+
+.header{
+    min-height: 10vh;
+    width: 100%;
+    background-color: #080618;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+
+nav{
+    display: flex;
+    padding: 2% 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title{
+    width: 30%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+span{
+    color: #F0A93E;
+}
+
+.nav-items{
+    flex:1;
+    text-align: right;
+}
+
+.nav-items ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-items ul li a{
+    color: #9CA3AF;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.nav-items ul li a .home{
+    color: #FFFFFF;
+}
+
+.nav-items ul li::after{
+    content: '';
+    width: 0%;
+    height:2px;
+    background: #F0A93E;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-items ul li:hover::after{
+    width:100%;
+}
+
+nav .fa{
+    display: none;
+}
+
+/* About Me */
+
+.hero{
+    padding: 25vh 20vh;
+    background: #120827;
+}
+
+.welcome{
+    color: #F0A93E;
+}
+
+.name{
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.hero-content{
+    padding-right: 80vh;
+}
+
+.contact-btn{
+    width: 15vh;
+    height: 5vh;
+    background: #FACC15;
+    border: 0;
+    border-radius: 0.8vh;
+    padding: 1vh;
+}
+
+.contact-btn a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact-btn:hover{
+    transform: scale(0.95);
+    transition: 0.09s;
+}
+
+/* About Me */
+
+.about-me{
+    background: #080618;
+    display: flex;
+    justify-content: center;
+    padding: 15vh 0;
+}
+
+.my-img{
+    padding-left: 20vh;
+}
+
+.my-img img{
+    height: 45vh;
+    width: 40vh;
+    border: #F0A93E solid 8px;
+    border-radius: 2vh;
+}
+
+.about-content{
+    padding-top: 10vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
+}
+
+/* Service */
+
+.service{
+    background: #111827;
+    padding: 15vh 20vh;
+}
+
+.service-content{
+    padding-right: 70vh;
+}
+
+.service-list{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+
+.service-card{
+    background: #020617;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3vh;
+    margin-right: 1.5vh;
+    margin-left: 1.5vh;
+}
+
+.service-card .fa{
+    font-size: 5vh;
+    color: #F0A93E;
+}
+
+/* Portfolio */
+
+.portfolio{
+    background: #080618;
+    padding: 15vh 20vh;
+}
+
+.portfolio-head{
+    text-align: center;
+    padding-left: 45vh;
+    padding-right: 45vh;
+}
+
+.portfolio-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.main-project{
+    height: 60vh;
+    padding-right: 3vh;
+}
+
+.main-project img{
+    height: 56vh;
+    width: 56vh;
+    border-radius: 2vh;
+    
+}
+
+.other-project{
+    height: 60vh;
+}
+
+.project-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-list div img{
+    height: 26.2vh;
+    width: 26.2vh;
+    margin: 0 1.5vh 3vh 1.5vh;
+    border-radius: 2vh;
+}
+
+/* Experience */
+
+.experience{
+    background: #111827;
+    padding: 15vh 20vh;
+}
+
+.experience-content{
+    padding-right: 70vh;
+}
+
+.experience-list{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+
+.experience-card{
+    background: #020617;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 3vh;
+    margin-right: 1.5vh;
+    margin-left: 1.5vh;
+}
+
+.experience-card h2{
+    color:#F0A93E;
+}
+
+/* Cotact me */
+
+.contact-me{
+    background: #080618;
+    padding: 15vh 20vh;
+}
+
+.contact-head{
+    text-align: center;
+    padding-left: 30vh;
+    padding-right: 30vh;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+}
+
+.contact-details p a{
+    text-decoration: none;
+}
+
+.form-elemt{
+    margin: 2vh;
+}
+
+#name{
+    height: 5vh;
+    color: white;
+    background: #1F2937;
+    border: 0px;
+}
+
+#message{
+    height: 10vh;
+    width: 40vh;
+    color: white;
+    background: #1F2937;
+    border: 0px;
+}
+
+#contact-btn{
+    color: #000000;
+}
+
+#contact-btn:hover{
+    cursor: pointer;
+}
+
+.contact-end{
+    margin-top: 10vh;
+    text-align: center;
+    padding: 0 20vh;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.socials div{
+    padding: 0 0.8vh;
+}
+
+.socials div a .fa{
+    color: #1F2937;
+}
+
+.socials div a .fa-linkedin{
+    color: #F0A93E;
+}
+
+
+@media(max-width: 1200px){
+
+    .nav-title{
+        padding-left: 5vh;
+    }
+
+    .nav-items ul li{
+        display: block;
+    }
+    .nav-items{
+        position: absolute;
+        background: #120827;
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.75s;
+    }
+
+    nav .fa{
+        display:block;
+        color:#fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-items ul{
+        padding: 30px;
+    }
+
+    .hero{
+        margin: auto;
+        text-align: center;
+        padding: 15vh 0;
+    }
+
+    .hero-content{
+        padding: 0vh 4vh;
+    }
+
+    .about-me{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-content{
+        padding: 10vh 4vh;
+    }
+
+    .my-img{
+        padding-left: 0;
+    }
+
+    .my-img img{
+        height: 35vh;
+        width: 30vh;
+    }
+
+    .service{
+        margin: auto;
+        text-align: center;
+        padding: 10vh 0;
+    }
+
+    .service-content{
+        padding: 0vh 4vh;
+    }
+
+    .service-list{
+        display: block;
+        justify-content: center;
+    }
+
+    .service-card{
+        margin: 1.5vh;
+    }
+
+    .portfolio{
+        padding: 10vh 0;
+    }
+
+    .portfolio-head{
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+
+    .portfolio-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    
+    .main-project{
+        height: 30vh;
+        padding-right: 0;
+    }
+
+    .main-project img{
+        height: 25vh;
+        width: 25vh;
+    }
+
+    .other-project{
+        height: 30vh;
+    }
+
+    .project-list div img{
+        height: 10vh;
+        width: 10vh;
+        margin: 0 1vh 2vh 1vh;
+        border-radius: 2vh;
+    }
+
+    .experience{
+        padding: 10vh 0;
+        text-align: center;
+    }
+
+    .experience-content{
+        padding: 0vh 4vh;
+    }
+
+    .experience-list{
+        display: block;
+        justify-content: center;
+    }
+
+    .experience-card{
+        margin: 1.5vh;
+    }
+
+    .contact-me{
+        padding: 10vh 0;
+        text-align: center;
+    }
+
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        padding: 0 4vh;
+    }
+
+    .contact-head{
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+
+    .contact-end{
+        padding: 0 4vh;
+    }
+
+}
